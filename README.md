@@ -11,23 +11,37 @@
 - `cd nombre_del_directorio` : Entrar en un directorio especifico
 - `dir` : Listar archivos y carpetas en el directorio actual (cmd)
 - `ls` : Listar archivos y carpetas en el directorio actual (git bash)
-- `mkdir` : Crear un nuevo directorio   
+- `mkdir` : Crear un nuevo directorio    
+- `exit` : Salir de la terminal 
 - `git init` : Inicializar un nuevo repositorio git
 - `git clone URL_del_repositorio` : Clonar un repositorio remoto 
 - `git remote add origin URL_del_repositorio` : Vincular un repositorio local con uno remoto 
-- `git branch nombre_de_la_rama` : Crear una nueva rama 
+- `git branch nombre_de_la_rama` : Crear una nueva rama  
+- `git branch` : Listar las ramas existentes
 - `git add .` : Agregar archivos al area de preparacion  
 - `git branch -M main` : Cambiar el nombre de la rama principal a "main"
 - `git commit -m "mensaje"` : Confirmar los cambios con un mensaje descriptivo  
-- `git push` : Subir los cambios al repositorio remoto   
+- `git push` : Subir los cambios al repositorio remoto    
+- `git push -u origin main` : Subir la rama principal al repositorio remoto por primera vez 
 - `git status` : Ver el estado de los archivos en el repositorio 
 - `git fetch` : Actualizar la informacion del repositorio remoto sin fusionar los cambios  
-- `git pull` : Actualizar el repositorio local con los cambios del remoto
-- `git remote -v` : Ver los repositorios remotos vinculados 
-- `git remote set-url origin URL_nueva` : Cambiar la URL del repositorio remoto vinculado 
-- `exit` : Salir de la terminal 
+- `git fetch --all` : Obtener todos los cambios de todos los repositorios remotos vinculados 
+- `git fetch origin main` : Obtener los cambios de la rama main del repositorio remoto vinculado  
+- `git fetch origin` : Obtener los cambios del repositorio remoto sin fusionarlos
+- `git pull` : Actualizar el repositorio local con los cambios del remoto 
+- `git pull origin main --rebase` : Actualizar la rama local con los cambios de la rama remota main usando rebase 
+- `git pull --rebase` : Actualizar la rama local con los cambios del remoto usando rebase 
+- `git pull --all` : Actualizar todas las ramas locales con los cambios de los remotos vinculados
+- `git remote -v` : Ver los repositorios remotos vinculados
+- `git remote set-url origin URL_nueva` : Cambiar la URL del repositorio remoto vinculado  
 - `git help` : Mostrar ayuda sobre los comandos de git 
 - `git log` : Ver el historial de commits 
 - `git diff` : Ver las diferencias entre archivos modificados y el ultimo commit 
-- `git push -u origin main` : Subir la rama principal al repositorio remoto por primera vez 
-- `git pull origin main --rebase` : Actualizar la rama local con los cambios de la rama remota
+- `git reset --hard` : Deshacer el ultimo commit y eliminar los cambios realizados 
+- `git stash` : Guardar temporalmente los cambios no confirmados 
+- `git stash pop` : Recuperar los cambios guardados con git stash 
+- `git merge` : Fusionar una rama en la rama actual
+- `git branch --set-upstream-to=origin/main main` : Vincular la rama local main con la rama remota main
+- `git reset` : Deshacer cambios en el area de preparacion o en el ultimo commit
+- `git branch --set-upstream-to=origin/main main` : Vincular la rama local main con la rama remota main
+- `git stash list` : Ver la lista de cambios guardados con git stash
